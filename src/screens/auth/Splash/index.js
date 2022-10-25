@@ -1,8 +1,8 @@
 import React from 'react';
-import { Text, View, Image, Pressable } from "react-native";
-import { styles } from './styles';
+import {Text, View, Image, Pressable} from 'react-native';
+import {styles} from './styles';
 
-import Button from "../../../components/Button";
+import Button from '../../../components/Button';
 
 const Splash = () => {
   const onSignup = () => {
@@ -15,7 +15,11 @@ const Splash = () => {
 
   return (
     <View style={styles.container}>
-      <Image resizeMode='contain' style={styles.image} source={require('../../../assets/splash_image.png')} />
+      <Image
+        resizeMode="contain"
+        style={styles.image}
+        source={require('../../../assets/splash_image.png')}
+      />
 
       <View style={styles.titleContainer}>
         <Text style={styles.title}>You'll Find</Text>
@@ -31,7 +35,6 @@ const Splash = () => {
         <Text style={styles.footerText}>Sign In</Text>
       </Pressable>
     </View>
-
   );
 };
 
